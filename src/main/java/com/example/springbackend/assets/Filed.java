@@ -1,6 +1,4 @@
-package assets;
-
-import java.util.ArrayList;
+package com.example.springbackend.assets;
 
 public class Filed {
     private String content;

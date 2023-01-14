@@ -1,4 +1,4 @@
-package assets;
+package com.example.springbackend.assets;
 
 import java.util.ArrayList;
 
@@ -21,6 +21,10 @@ public class Form {
 
     public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getDescription() {
