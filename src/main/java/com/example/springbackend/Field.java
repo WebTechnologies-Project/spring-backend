@@ -1,20 +1,16 @@
 package com.example.springbackend;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "field")
 public class Field {
-    @Id
-    @Column(name = "id", nullable = false)
-    private Integer id;
 
+    private Integer id;
     private String content;
-    private Types type;
     private Integer formID;
+    private Types type;
+
 
    public Field (){
 
@@ -24,6 +20,17 @@ public class Field {
         this.content = content;
         this.type = type;
         this.formID = formID;
+    }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Integer getId() {
+
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getContent() {

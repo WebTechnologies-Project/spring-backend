@@ -2,7 +2,6 @@ package com.example.springbackend;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
 
 @Entity
 @Table(name = "form")
@@ -11,17 +10,16 @@ public class Form {
     private Integer id;
     private String title;
     private String description;
-    private Boolean isOpen;
-//    public ArrayList<Field> fields = new ArrayList<>();
+
 
     public Form(){
 
     }
-    public Form(String title, Integer id, String description, Boolean isOpen) {
+    public Form(String title, Integer id, String description) {
         this.title = title;
         this.id = id;
         this.description = description;
-        this.isOpen = isOpen;
+
     }
 
 
@@ -52,7 +50,5 @@ public class Form {
         return description;
     }
 
-//    public void setFields(ArrayList<Field> fields) {
-//        this.fields = fields;
-//    }
+
 }
