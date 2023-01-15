@@ -1,14 +1,13 @@
 package com.example.springbackend.service;
-import com.example.springbackend.assets.Form;
-import jakarta.transaction.Transactional;
+import com.example.springbackend.Form;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.springbackend.repository.FormRepository;
 
-//import javax.transaction.Transactional;
+
 import java.util.List;
 @Service
-@Transactional
 
 public class FormService {
 

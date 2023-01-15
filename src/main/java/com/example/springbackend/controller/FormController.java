@@ -1,6 +1,6 @@
-package controller;
+package com.example.springbackend.controller;
 
-import com.example.springbackend.assets.Form;
+import com.example.springbackend.Form;
 import com.example.springbackend.service.FormService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

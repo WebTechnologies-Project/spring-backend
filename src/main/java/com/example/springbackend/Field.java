@@ -1,11 +1,26 @@
-package com.example.springbackend.assets;
+package com.example.springbackend;
 
-public class Filed {
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "field")
+public class Field {
+    @Id
+    @Column(name = "id", nullable = false)
+    private Integer id;
+
     private String content;
     private Types type;
     private Integer formID;
 
-    public Filed(String content, Types type, Integer formID) {
+   public Field (){
+
+   }
+
+    public Field(String content, Types type, Integer formID) {
         this.content = content;
         this.type = type;
         this.formID = formID;
