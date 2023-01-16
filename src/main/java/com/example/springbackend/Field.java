@@ -9,7 +9,7 @@ public class Field {
     private Integer id;
     private String content;
     private Integer formID;
-    private Types type;
+    private String type;
 
 
    public Field (){
@@ -18,7 +18,7 @@ public class Field {
 
     public Field(String content, Types type, Integer formID) {
         this.content = content;
-        this.type = type;
+        this.type = type.toString();
         this.formID = formID;
     }
 
@@ -41,11 +41,11 @@ public class Field {
         this.content = content;
     }
 
-    public Types getType() {
-        return type;
+    public String getType() {
+        return type.toString();
     }
 
-    public void setType(Types type) {
+    public void setType(String type) {
         this.type = type;
     }
 
