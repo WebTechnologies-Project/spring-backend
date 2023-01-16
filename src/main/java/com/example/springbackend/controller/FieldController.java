@@ -39,7 +39,7 @@ public class FieldController {
     public void add(@RequestBody Field field) {
         fieldService.saveField(field);
     }
-    
+
     @PutMapping("/{id}")
     public ResponseEntity<?> update(@RequestBody Field field, @PathVariable Integer id) {
         try {
